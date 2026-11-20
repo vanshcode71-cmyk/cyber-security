@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0b1120;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+header h1 span {
+    color: #22c55e;
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 8px;
+}
+
+.analyzer {
+    background: #151f32;
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid #26354d;
+}
+
+.analyzer h2 {
+    font-size: 24px;
+}
+
+.description {
+    color: #94a3b8;
+    margin: 10px 0 25px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    background: #0b1120;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #22c55e;
+}
+
+button {
+    padding: 0 18px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    color: #06120a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.strength-section {
+    margin-top: 28px;
+}
+
+.strength-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+#strengthText {
+    color: #facc15;
+    font-weight: bold;
+}
+
+.progress-bar {
+    height: 9px;
+    background: #334155;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#strengthBar {
+    width: 0%;
+    height: 100%;
+    background: #ef4444;
+    transition: width 0.3s;
+}
+
+#scoreText {
+    color: #94a3b8;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.requirements {
+    margin-top: 30px;
+}
+
+.requirements h3,
+.suggestions h3 {
+    margin-bottom: 17px;
+}
+
+.requirement {
+    color: #94a3b8;
+    margin: 13px 0;
+    font-size: 15px;
+}
+
+.requirement span {
+    margin-right: 10px;
+    color: #ef4444;
+}
+
+.requirement.valid {
+    color: #22c55e;
+}
+
+.requirement.valid span {
+    color: #22c55e;
+}
+
+.suggestions {
+    margin-top: 30px;
+    padding: 18px;
+    background: #0b1120;
+    border-radius: 10px;
+}
+
+.suggestions p {
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+@media (max-width: 480px) {
+    .analyzer {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+}

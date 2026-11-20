@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecureCheck - Password Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Secure<span>Check</span></h1>
+            <p>Password Security Analyzer</p>
+        </header>
+
+        <main class="analyzer">
+
+            <h2>Analyze Your Password</h2>
+
+            <p class="description">
+                Check how secure your password is.
+            </p>
+
+            <!-- Password Input -->
+
+            <div class="input-group">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    autocomplete="off"
+                >
+
+                <button id="togglePassword" type="button">
+                    Show
+                </button>
+
+            </div>
+
+            <!-- Strength Result -->
+
+            <div class="strength-section">
+
+                <div class="strength-info">
+                    <span>Strength</span>
+                    <span id="strengthText">Not Tested</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="strengthBar"></div>
+                </div>
+
+                <p id="scoreText">Score: 0/5</p>
+
+            </div>
+
+            <!-- Entropy -->
+
+            <div class="entropy-section">
+
+                <h3>Password Entropy</h3>
+
+                <p id="entropyText">Entropy: 0 bits</p>
+
+                <p id="entropyDescription">
+                    Enter a password to calculate entropy.
+                </p>
+
+            </div>
+
+            <!-- Requirements -->
+
+            <div class="requirements">
+
+                <h3>Password Requirements</h3>
+
+                <div class="requirement" id="length">
+                    <span>✕</span> At least 12 characters
+                </div>
+
+                <div class="requirement" id="uppercase">
+                    <span>✕</span> Uppercase letters
+                </div>
+
+                <div class="requirement" id="lowercase">
+                    <span>✕</span> Lowercase letters
+                </div>
+
+                <div class="requirement" id="number">
+                    <span>✕</span> Numbers
+                </div>
+
+                <div class="requirement" id="special">
+                    <span>✕</span> Special characters
+                </div>
+
+                <div class="requirement" id="commonCheck">
+                    <span>✕</span> No common password patterns
+                </div>
+
+            </div>
+
+            <!-- Security Suggestions -->
+
+            <div class="suggestions">
+
+                <h3>Security Suggestions</h3>
+
+                <p id="suggestionText">
+                    Enter a password to begin analysis.
+                </p>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>SecureCheck | Password Security Project</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
